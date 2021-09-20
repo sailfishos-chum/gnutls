@@ -1,0 +1,3 @@
+[submodule "gnutls"]
+	path = gnutls
+	url = https://gitlab.com/gnutls/gnutls.git
