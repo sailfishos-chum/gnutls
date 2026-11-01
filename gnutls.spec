@@ -1,5 +1,5 @@
 Name:           gnutls37
-Version:        3.7.2
+Version:        3.7.11
 Release:        1%{?dist}
 Summary:        A TLS protocol implementation
 
