@@ -83,7 +83,7 @@ manipulation tools.
 %setup -q -n gnutls-%{version}
 
 %build
-%configure --with-included-unistring
+%configure --with-included-unistring --disable-doc
 %make_build
 
 %install
