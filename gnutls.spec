@@ -107,6 +107,7 @@ rm -rf $RPM_BUILD_ROOT/%{_infodir}
 
 %files
 %{_libdir}/libgnutls.so.%{sover}*
+%{_libdir}/libgnutls-dane.so.*
 %doc README.md AUTHORS NEWS THANKS
 %license LICENSE doc/COPYING doc/COPYING.LESSER
 
@@ -120,6 +121,7 @@ rm -rf $RPM_BUILD_ROOT/%{_infodir}
 
 %files utils
 %{_bindir}/certtool
+%{_bindir}/danetool
 %{_bindir}/ocsptool
 %{_bindir}/psktool
 %{_bindir}/p11tool
