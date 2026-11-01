@@ -1,4 +1,7 @@
 Name:           gnutls37
+
+%define sover   30
+
 Version:        3.7.11
 Release:        1%{?dist}
 Summary:        A TLS protocol implementation
@@ -102,12 +105,12 @@ rm -rf $RPM_BUILD_ROOT/%{_mandir}
 /sbin/ldconfig
 
 %files
-%{_libdir}/libgnutls.so.30*
+%{_libdir}/libgnutls.so.%{sover}*
 %doc README.md AUTHORS NEWS THANKS
 %license LICENSE doc/COPYING doc/COPYING.LESSER
 
 %files c++
-%{_libdir}/libgnutlsxx.so.28*
+%{_libdir}/libgnutlsxx.so.%{sover}*
 
 %files devel
 %{_includedir}/*
