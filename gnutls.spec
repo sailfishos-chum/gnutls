@@ -91,6 +91,7 @@ manipulation tools.
 rm -f $RPM_BUILD_ROOT/%{_docdir}/gnutls/*.png
 rm -rf $RPM_BUILD_ROOT/%{_datadir}/locale
 rm -rf $RPM_BUILD_ROOT/%{_mandir}
+rm -rf $RPM_BUILD_ROOT/%{_infodir}
 
 %post
 /sbin/ldconfig
@@ -116,8 +117,6 @@ rm -rf $RPM_BUILD_ROOT/%{_mandir}
 %{_includedir}/*
 %{_libdir}/libgnutls*.so
 %{_libdir}/pkgconfig/*.pc
-%{_infodir}/gnutls*
-%{_infodir}/pkcs11-vision*
 
 %files utils
 %{_bindir}/certtool
