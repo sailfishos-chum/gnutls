@@ -20,6 +20,10 @@ BuildRequires:  autoconf
 BuildRequires:  automake
 BuildRequires:  gettext-devel
 BuildRequires:  texinfo
+# optional libs:
+BuildRequires:  brotli-devel
+BuildRequires:  unbound-devel
+BuildRequires:  libidn2-devel
 
 Requires(post): coreutils
 Requires(postun): coreutils
